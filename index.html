@@ -33,9 +33,31 @@ th{background:#eef2f6}
 footer{border-top:1px solid var(--line);margin-top:3em;padding:16px 18px 40px;font-size:.88rem;color:var(--mute)}
 @media print{nav{display:none}body{background:#fff;font-size:12px}}
 @media(max-width:600px){h1{font-size:1.3rem}}
+.toptabs{position:sticky;top:0;z-index:10;background:#1d2433;}
+.toptabs .row{max-width:960px;margin:0 auto;padding:6px 18px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.toptabs .brand{color:#fff;font-weight:600;font-size:.9rem;margin-right:10px}
+.tabbtn{font:inherit;font-size:.9rem;cursor:pointer;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:6px;padding:5px 12px}
+.tabbtn:hover{border-color:var(--accent)}
+.tabbtn.active{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600}
+.toptabs .tabbtn{background:#2c3548;color:#e6e9ef;border-color:#3a4458}
+.toptabs .tabbtn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.panel[hidden]{display:none}
+nav{top:44px}
+#panel-refs .wrap{max-width:1100px;margin:0 auto;padding:14px 18px 30px}
+.subtabs{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.subgroup{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--mute);width:100%;margin-top:6px}
+.viewer{width:100%;height:calc(100vh - 230px);min-height:420px;border:1px solid var(--line);border-radius:6px;background:#fff}
+.viewer-meta{font-size:.85rem;color:var(--mute);margin:4px 0}
+@media print{.toptabs{display:none}}
 </style>
 </head>
 <body>
+<div class="toptabs" role="tablist"><div class="row">
+<span class="brand">NITKKR Biogas</span>
+<button class="tabbtn active" role="tab" data-panel="panel-draft" id="tab-draft">Pre-DPR draft</button>
+<button class="tabbtn" role="tab" data-panel="panel-refs" id="tab-refs">Reference proposals</button>
+</div></div>
+<div class="panel" id="panel-draft" role="tabpanel">
 <header>
 <h1>NITKKR Campus Biogas Pilot — Living Pre-DPR</h1>
 <p class="meta">National Institute of Technology Kurukshetra (NITKKR), Haryana · Thin living draft.<br>
@@ -189,8 +211,70 @@ Proxy / estimate / lit-calculation figures are intentionally omitted from this d
 <li>IISc biomethanation tender (2017) — tender / O&amp;M language sample only.</li>
 <li>IIT Roorkee Green Committee minutes — institute approval-path analogy.</li>
 </ol>
+<p>Read the text extracts in the <a href="#reference-proposals">Reference proposals</a> tab.</p>
 <p>Team outlines (gaps, not filled values): Compliance C1–C8 outline; Data matrix/dictionary; Researcher accepted shortlist <code>refs/accepted_built_shortlist.md</code>.</p>
 NITKKR = NIT Kurukshetra. Thin living draft — proxies stripped; methodology refs locked 26 Oct 2026.
 </footer>
+</div>
+<div class="panel" id="panel-refs" role="tabpanel" hidden>
+<div class="wrap">
+<h2 style="margin-top:.4em">Reference proposals</h2>
+<div class="banner">Accepted / built campus refs — structure reading only. No public full DPR for most; plants built. Text extracts for in-browser reading; full PDFs live in team <code>/workspace/refs/</code>.</div>
+<div class="subtabs">
+<div class="subgroup">Primary — accepted built shortlist</div>
+<button class="tabbtn" data-ref="tezpur">Tezpur</button>
+<button class="tabbtn" data-ref="nitw-emp">NIT Warangal EMP</button>
+<button class="tabbtn" data-ref="nitw-sustainability">NIT Warangal sustainability</button>
+<button class="tabbtn" data-ref="nitt-nisargruna">NIT Trichy Nisargruna</button>
+<button class="tabbtn" data-ref="dtu-nisargruna">DTU Nisargruna econ</button>
+<button class="tabbtn" data-ref="iitgn">IIT Gandhinagar</button>
+<button class="tabbtn" data-ref="proposal-format">Institutional proposal format</button>
+<button class="tabbtn" data-ref="mnre-wte">MNRE WtE guidelines</button>
+<button class="tabbtn" data-ref="gobardhan">GOBARdhan manual</button>
+<div class="subgroup">Campus measured source</div>
+<button class="tabbtn" data-ref="deswal-prasad">Deswal / Prasad 2024</button>
+<div class="subgroup">Secondary (demoted)</div>
+<button class="tabbtn" data-ref="iisc">IISc tender</button>
+<button class="tabbtn" data-ref="uiuc">UIUC feasibility</button>
+</div>
+<p class="viewer-meta">Viewing: <strong id="ref-label">Tezpur</strong> · <a id="ref-open" href="refs/tezpur.html" target="_blank" rel="noopener">open in new tab</a></p>
+<iframe class="viewer" id="ref-frame" src="refs/tezpur.html" title="Reference proposal viewer"></iframe>
+</div>
+</div>
+<script>
+(function(){
+var tabs=document.querySelectorAll('.toptabs .tabbtn');
+function show(id){
+  tabs.forEach(function(b){var on=b.dataset.panel===id;b.classList.toggle('active',on);b.setAttribute('aria-selected',on);});
+  document.querySelectorAll('.panel').forEach(function(p){p.hidden=(p.id!==id);});
+}
+var subs=document.querySelectorAll('[data-ref]');
+function openRef(slug){
+  var b=document.querySelector('[data-ref="'+slug+'"]'); if(!b) return;
+  subs.forEach(function(x){x.classList.toggle('active',x===b);});
+  var url='refs/'+slug+'.html';
+  document.getElementById('ref-frame').src=url;
+  document.getElementById('ref-open').href=url;
+  document.getElementById('ref-label').textContent=b.textContent;
+}
+tabs.forEach(function(b){b.addEventListener('click',function(){
+  show(b.dataset.panel);
+  history.replaceState(null,'',b.dataset.panel==='panel-refs'?'#reference-proposals':location.pathname);
+});});
+subs.forEach(function(b){b.addEventListener('click',function(){
+  openRef(b.dataset.ref); history.replaceState(null,'','#rp-'+b.dataset.ref);
+});});
+/* draft jump links: ensure draft panel active */
+document.querySelectorAll('#panel-draft nav a').forEach(function(a){a.addEventListener('click',function(){show('panel-draft');});});
+function route(){
+  var h=location.hash;
+  if(h==='#reference-proposals'){show('panel-refs');}
+  else if(h.indexOf('#rp-')===0){show('panel-refs');openRef(h.slice(4));}
+  else if(h){show('panel-draft');var t=document.querySelector(h);if(t)t.scrollIntoView();}
+}
+openRef('tezpur');
+window.addEventListener('hashchange',route); route();
+})();
+</script>
 </body>
 </html>
