@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NITKKR Campus Biogas — Living Pre-DPR (thin draft)</title>
+<title>NITKKR Campus Biogas — Living Pre-DPR (clone-aligned thin draft)</title>
 <style>
 :root{--ink:#1d2433;--mute:#5b6475;--line:#d9dee7;--bg:#fafbfc;--accent:#1f6f50}
 *{box-sizing:border-box}
@@ -61,9 +61,9 @@ nav{top:44px}
 <header>
 <h1>NITKKR Campus Biogas Pilot — Living Pre-DPR</h1>
 <p class="meta">National Institute of Technology Kurukshetra (NITKKR), Haryana · Thin living draft.<br>
-<strong>Last updated: 26 Oct 2026 (refs locked; SATAT section added 26 Oct 2026)</strong> · Rule: no proxy / estimate / assumption numbers until accepted campus refs lock.</p>
+<strong>Last updated: 26 Oct 2026 — Draft realigned to Researcher clone section map</strong> (Tezpur TOC spine + Warangal / MNRE / Surathkal / Trichy / SATAT modules) · Rule: no proxy / estimate / assumption numbers until accepted campus refs lock.</p>
 <div class="banner"><strong>Scope:</strong> <strong>all campus</strong> — hostels included, plus colony, horticulture, commercial canteen, STP sludge, and other campus feedstock kinds as they are identified.<br>
-<strong>Numbers policy:</strong> only tagged <em>measured</em> campus facts appear below. All other modules are empty shells. Methodology TBD.</div>
+<strong>Numbers policy:</strong> only tagged <em>measured</em> campus facts appear below. All other fields are empty shells. Desk / vendor-brochure fields are empty slots (never banked as campus data). Lab fields stay empty until assays exist. Methodology TBD.</div>
 <div class="legend"><strong>Tag legend:</strong>
 <span class="tag measured">measured</span> primary campus document ·
 <span class="tag empty">empty</span> not filled — no invented value ·
@@ -71,109 +71,243 @@ nav{top:44px}
 Proxy / estimate / lit-calculation figures are intentionally omitted from this draft.</div>
 </header>
 <nav><ul>
-<li><a href="#exec">1 About</a></li>
-<li><a href="#feedstock">2 Feedstock</a></li>
-<li><a href="#tech">3 Technology</a></li>
-<li><a href="#site">4 Site</a></li>
-<li><a href="#assays">5 Assays</a></li>
-<li><a href="#collection">6 Collection</a></li>
-<li><a href="#compliance">7 Env &amp; compliance</a></li>
-<li><a href="#satat">8 SATAT</a></li>
-<li><a href="#economics">9 Economics</a></li>
-<li><a href="#next">10 Next steps</a></li>
+<li><a href="#background">1 Background</a></li>
+<li><a href="#potential">2 Potential &amp; schemes</a></li>
+<li><a href="#context">3 Campus context</a></li>
+<li><a href="#design">4 Project design</a></li>
+<li><a href="#technology">5 Technology</a></li>
+<li><a href="#innovation">6 Innovation</a></li>
+<li><a href="#capex">7 CAPEX / feasibility</a></li>
+<li><a href="#way-forward">8 Way forward</a></li>
+<li><a href="#emp">A EMP</a></li>
+<li><a href="#mnre">B MNRE</a></li>
+<li><a href="#csr-om">C CSR / O&amp;M</a></li>
+<li><a href="#barc-mou">D BARC MoU</a></li>
+<li><a href="#satat">E SATAT</a></li>
+<li><a href="#permit-matrix">F Permits (sec.)</a></li>
 <li><a href="#refs">Refs</a></li>
 </ul></nav>
 <main>
 
-<section id="exec">
-<h2>1. What this proposal is about</h2>
-<p>NITKKR is preparing a Pre-DPR for a small on-campus anaerobic digestion (biogas) pilot that would process segregated campus wet waste (including hostel streams) and STP sludge into cooking gas and digestate manure.</p>
+<section id="background">
+<h2>1. Background / problem</h2>
+<p>Cooking fuel on campus is largely LPG, a fossil fuel with climate and supply-cost exposure. Campus wet waste — hostel mess and canteen food waste, garden litter, STP sludge — leaves campus or is handled off-site instead of being recovered as energy and manure. Anaerobic digestion converts segregated organic waste into biogas for cooking and digestate for campus use.</p>
+</section>
+
+<section id="potential">
+<h2>2. Potential of biogas / national schemes</h2>
 <ul>
-<li>This page is the living outline. Module shells stay empty until accepted NIT campus measurements (or locked institute decisions) land.</li>
-<li>Sample / reference proposals are listed under Refs for structure only — they are not our numbers.</li>
-<li>Methodology for gas, sizing, and cost is <strong>TBD</strong> until accepted NIT refs lock.</li>
-<li>A <a href="#satat">SATAT / CBG offtake variation</a> is in scope as an empty shell — scheme info only, no fit numbers.</li>
+<li>Biogas from institutional organic waste is supported under national programmes: <strong>GOBARdhan</strong> (Galvanizing Organic Bio-Agro Resources Dhan) and the MNRE Biogas Programme (<a href="#mnre">Annex B</a>).</li>
+<li>A compressed bio-gas (CBG) offtake path exists under MoPNG&rsquo;s <strong>SATAT</strong> scheme — kept as a variation shell in <a href="#satat">Annex E</a>.</li>
+<li>Scheme fit for NITKKR: <span class="tag empty">empty</span> — Compliance.</li>
 </ul>
 </section>
 
-<section id="feedstock">
-<h2>2. Feedstock sources (streams in scope)</h2>
+<section id="context">
+<h2>3. Campus context + champion</h2>
 <div class="tbl"><table>
-<tr><th>Stream</th><th>Wet mass / solids</th><th>Notes</th></tr>
-<tr><td>Campus solid waste (all types, annual)</td><td><strong>1,615,027 kg/yr</strong> <span class="tag measured">measured</span></td><td>Deswal/Prasad 2024 campus study. Context only — not a digester feed recipe.</td></tr>
-<tr><td>STP design / influent</td><td><strong>1.5 MLD</strong> design / <strong>1.05 MLD</strong> influent <span class="tag measured">measured</span></td><td>Same paper. Sludge wet kg/d for the pilot is <span class="tag empty">empty</span>.</td></tr>
-<tr><td>Residential colony (wet/organic)</td><td class="lock">— <span class="tag empty">empty</span></td><td>Weighed window required.</td></tr>
-<tr><td>Horticulture</td><td class="lock">— <span class="tag empty">empty</span></td><td>Species / season notes may land later; no kg here.</td></tr>
-<tr><td>Commercial canteen</td><td class="lock">— <span class="tag empty">empty</span></td><td>Weighing pending.</td></tr>
-<tr><td>STP sludge (WAS) for digester share</td><td class="lock">— <span class="tag empty">empty</span></td><td>Needs thickening / operator data before any feed mass is written.</td></tr>
-<tr><td>Other campus feedstock kinds</td><td class="lock">— <span class="tag empty">empty</span></td><td>In scope as identified (e.g. FVW, lawn, pond sludge) — no masses until measured.</td></tr>
-<tr><td>Hostel mess / hostel wet waste</td><td class="lock">— <span class="tag empty">empty</span></td><td>In scope (all-campus). Weigh / tender kg pending. Piggy / vendor revenue conflict flagged for later, not a number here.</td></tr>
+<tr><th>Field</th><th>Value</th></tr>
+<tr><td>Institution</td><td>NIT Kurukshetra (NITKKR), Haryana</td></tr>
+<tr><td>Campus solid waste (all types, annual)</td><td><strong>1,615,027 kg/yr</strong> <span class="tag measured">measured</span> — Prasad &amp; Deswal 2024. Context only — not a digester feed recipe.</td></tr>
+<tr><td>STP design / influent</td><td><strong>1.5 MLD</strong> design / <strong>1.05 MLD</strong> influent <span class="tag measured">measured</span> — same paper. Sludge kg/d <span class="tag empty">empty</span>.</td></tr>
+<tr><td>Campus energy / sustainability initiative</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>PI / champion</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Departments involved</td><td><span class="tag empty">empty</span></td></tr>
 </table></div>
-<h3>Do-not-use</h3>
-<ul>
-<li>Deswal Fig. 3 “22% compostable” as organic share — <span class="tag locked">locked</span> / forbidden.</li>
-<li>Any literature BMP, blend sketch, or planning gas band — stripped from this draft.</li>
-</ul>
+<p><span class="tag locked">locked</span> Deswal Fig. 3 &ldquo;22% compostable&rdquo; as organic share — must not be used.</p>
 </section>
 
-<section id="tech">
-<h2>3. Technology options</h2>
-<p>Empty shell. Route choice (HLR vs other), pretreat, and kit size stay open until campus mass + assays lock.</p>
+<section id="design">
+<h2>4. Project Design</h2>
+
+<h3 id="stakeholders">4.1 Stakeholders</h3>
 <div class="tbl"><table>
-<tr><th>Item</th><th>Status</th></tr>
-<tr><td>Digester type / OLR–HRT setpoint</td><td><span class="tag empty">empty</span></td></tr>
-<tr><td>Pretreatment (shred / fungal / other)</td><td><span class="tag empty">empty</span></td></tr>
-<tr><td>Gas holder / end use</td><td><span class="tag empty">empty</span></td></tr>
-<tr><td>Vendor shortlist (quotes)</td><td><span class="tag empty">empty</span> — sample plant names may appear under Refs only</td></tr>
+<tr><th>Stakeholder (M4)</th><th>Role / NITKKR name</th></tr>
+<tr><td>Administration (waste + LPG budget)</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Hostel mess workers</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Faculty / energy department</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Research students</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Canteen / chai offtakers</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Digestate users (garden / sale)</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>LPG displacement narrative</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Balloon / storage for remote offtake</td><td><span class="tag empty">empty</span></td></tr>
+</table></div>
+
+<h3 id="data-collection">4.2 Background data collection</h3>
+<p>Method (Tezpur): questionnaire survey of hostels on LPG usage, food wastage, etc., before construction. NITKKR survey: <span class="tag empty">empty</span>.</p>
+<div class="tbl"><table>
+<tr><th>S.No</th><th>Hostel</th><th>No. of boarders</th><th>No. of cylinders required per day</th><th>MJ equivalent of LPG</th><th>Energy density (MJ/capita)</th><th>Food waste available (kg/day)</th></tr>
+<tr><td>1</td><td><span class="tag empty">empty</span></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>2</td><td><span class="tag empty">empty</span></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>…</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td colspan="6"><strong>Campus total food waste (sum)</strong></td><td><span class="tag empty">empty</span></td></tr>
+</table></div>
+<div class="tbl"><table>
+<tr><th>Survey note field</th><th>Value</th></tr>
+<tr><td>Prior disposal path (vendor / drained / other)</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Annual food waste figure (if published)</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Site suitability + logistics for plant location</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Other streams (colony, horticulture, commercial canteen, STP sludge, other kinds)</td><td><span class="tag empty">empty</span> — weighed window required</td></tr>
+</table></div>
+
+<h3 id="waste-food-contract">4.3 Hostel waste-food contract fields</h3>
+<p>Source type: Chief Warden quotation / tender notice — not a weighment study. Annexure-1 columns:</p>
+<div class="tbl"><table>
+<tr><th>Sr. No.</th><th>Hostel Name &amp; No.</th><th>Seat Capacity in Hostels (Approx.)</th><th>Rate (Rs.) Per Month</th></tr>
+<tr><td>1</td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>…</td><td></td><td></td><td></td></tr>
+</table></div>
+<div class="tbl"><table>
+<tr><th>Contract field (M1b)</th><th>Value</th></tr>
+<tr><td>Hostels covered (boys / girls lists)</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Total seats</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Contract period (from–to)</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Pickup times / mess staff presence</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Scope of waste (pantry leftovers; veg / fruit peels as named)</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Vendor commercial terms (vendor pays hostels; advance deposit months)</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Waste Food Committee / no-dues from outgoing vendor</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>kg/day</td><td><span class="tag empty">empty</span> — not in tender; must come from survey (4.2) or Estate weighing</td></tr>
+</table></div>
+
+<h3 id="feedstock-class">4.4 Easy vs hard feedstock</h3>
+<div class="tbl"><table>
+<tr><th>Type</th><th>Treated as</th><th>Evidence in refs</th></tr>
+<tr><td>Hostel / canteen kitchen &amp; food waste (cooked leftovers, prep peels)</td><td><strong>EASY</strong></td><td>Tezpur core feed; Trichy Nisargruna kitchen; Surathkal bio-waste; NITKKR waste-food tenders already lift it</td></tr>
+<tr><td>Leaves / garden (dry litter, horticulture)</td><td><strong>HARDER</strong></td><td>Tezpur: additional experiment after kitchen baseline; BARC: dry leaves need fungal pretreatment; Warangal EMP: segregation first</td></tr>
+<tr><td>STP sludge / WAS</td><td><strong>HARD for mass; needed for co-digestion</strong></td><td>Warangal path = kitchen + STP sludge; sludge DS not in Deswal — Estate / CPWD logs required</td></tr>
+<tr><td>Segregated vs mixed</td><td><strong>Segregation = prerequisite</strong></td><td>Warangal EMP bio / non-bio bins</td></tr>
+</table></div>
+<p>Masses per class: <span class="tag empty">empty</span>.</p>
+</section>
+
+<section id="technology">
+<h2>5. The Technology</h2>
+<h3>5.1 Technology design</h3>
+<div class="tbl"><table>
+<tr><th>Field (M3)</th><th>Value</th></tr>
+<tr><td>Digester type / name</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Portable vs fixed</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Seed / inoculum</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Waste : water ratio</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>pH band</td><td><span class="tag empty">empty</span> — lab</td></tr>
+<tr><td>kg waste per m³ plant</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Methane % band</td><td><span class="tag empty">empty</span> — lab</td></tr>
+<tr><td>Slurry / digestate as manure</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Construction duration</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Technician source</td><td><span class="tag empty">empty</span></td></tr>
+</table></div>
+<h3>5.2 Lab-to-land</h3>
+<div class="tbl"><table>
+<tr><th>Field</th><th>Value</th></tr>
+<tr><td>Lab / pilot size</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Full size</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Assays (TS, VS/TS, BMP) on real blend</td><td><span class="tag empty">empty</span> — until assays exist</td></tr>
+</table></div>
+<h3>5.3 Sources (what is fed)</h3>
+<div class="tbl"><table>
+<tr><th>Field</th><th>Value</th></tr>
+<tr><td>Daily feed (kg)</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Streams fed (per 4.4 classes)</td><td><span class="tag empty">empty</span></td></tr>
 </table></div>
 </section>
 
-<section id="site">
-<h2>4. Site options</h2>
-<p>Candidate locations not shortlisted <span class="tag empty">empty</span>. Civil can start after institute path and a provisional siting note; no layout numbers here.</p>
-</section>
-
-<section id="assays">
-<h2>5. Assays / composition (TS, VS, BMP)</h2>
+<section id="innovation">
+<h2>6. Innovation / ops extras</h2>
+<p>Only if a campus R&amp;D angle is confirmed.</p>
 <div class="tbl"><table>
-<tr><th>Stream</th><th>TS</th><th>VS/TS</th><th>BMP</th></tr>
-<tr><td>Colony wet waste</td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td></tr>
-<tr><td>Horticulture</td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td></tr>
-<tr><td>Commercial canteen</td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td></tr>
-<tr><td>STP sludge</td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td></tr>
-<tr><td><strong>Blend</strong></td><td colspan="2">needs mass fractions</td><td><span class="tag empty">empty</span></td></tr>
+<tr><th>Field</th><th>Value</th></tr>
+<tr><td>IoT / monitoring</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Gas distribution</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Output use</td><td><span class="tag empty">empty</span></td></tr>
 </table></div>
-<h3>Output / gas</h3>
-<p>Gas Nm³/d, CH₄ fraction for design, and two-route checks: <span class="tag empty">empty</span>. No lit-proxy bands on this page.</p>
 </section>
 
-<section id="collection">
-<h2>6. Collection, transport, storage</h2>
-<ul>
-<li>Segregation at source is a precondition <span class="tag empty">empty</span> for the campus plan text.</li>
-<li>Bin counts, trips/day, storage hours: <span class="tag empty">empty</span>.</li>
-</ul>
-</section>
-
-<section id="compliance">
-<h2>7. Environmental attributes &amp; compliance</h2>
-<p>Chapter outline exists with the team (C1–C8). Outcomes and lead times stay empty until Screening notes are accepted.</p>
+<section id="capex">
+<h2>7. CAPEX / Feasibility / Limitations</h2>
+<p>Tezpur line-item names only. No ₹ values.</p>
 <div class="tbl"><table>
-<tr><th>#</th><th>Item</th><th>Status on this page</th></tr>
-<tr><td>C1</td><td>EC / EIA screening</td><td><span class="tag empty">empty</span></td></tr>
-<tr><td>C2</td><td>HSPCB CTE / CTO (White aim)</td><td><span class="tag empty">empty</span></td></tr>
-<tr><td>C3</td><td>CPCB bio-digester / CBG norms</td><td><span class="tag empty">empty</span></td></tr>
-<tr><td>C4</td><td>SWM Rules — bulk waste generator</td><td><span class="tag empty">empty</span></td></tr>
-<tr><td>C5</td><td>MNRE CFA / related schemes</td><td><span class="tag empty">empty</span> — do not bank any subsidy figure here</td></tr>
-<tr><td>C6</td><td>Institute approval path</td><td><span class="tag empty">empty</span></td></tr>
-<tr><td>C7</td><td>Digester / gas safety</td><td><span class="tag empty">empty</span></td></tr>
-<tr><td>C8</td><td>HSPCB Regional Office confirmation</td><td><span class="tag empty">empty</span></td></tr>
+<tr><th>Line item (M7)</th><th>Value</th></tr>
+<tr><td>Construction materials</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Human resources</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Progress log (construction → commissioning)</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>CAPEX</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Feasibility</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Limitations</td><td><span class="tag empty">empty</span></td></tr>
+</table></div>
+</section>
+
+<section id="way-forward">
+<h2>8. Way forward / phased rollout</h2>
+<div class="tbl"><table>
+<tr><th>Phase</th><th>Scope</th><th>Timeline</th></tr>
+<tr><td>Phase 1</td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Phase 2</td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Phase 3</td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td></tr>
+</table></div>
+</section>
+
+<section id="emp">
+<h2>Annex A. Environmental Management Plan (Warangal EMP table)</h2>
+<div class="tbl"><table>
+<tr><th>Sl. No</th><th>Environmental Aspect</th><th>Management Issues to be considered</th><th>Details of activity to be performed</th><th>Responsibility / official</th><th>Time line or completion date</th><th>Evidence / Verification</th><th>Remarks</th></tr>
+<tr><td>5</td><td><strong>Solid Waste Management</strong></td><td>Segregation bio / non-bio; treatment via composting / biomethanation; use of compost; sanitary / biomedical disposal</td><td>Dust bins bio / non-bio; collection, transportation, composting and/or biomethanation</td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td><td>Biomethanation plant: <span class="tag empty">empty</span></td></tr>
+</table></div>
+<p>Full EMP addendum uses the same columns for the other Warangal aspects (rows empty): Drinking Water · Sanitation · Drainage · Barrier free Access · E-Waste · Traffic safety · General Electrical Safety · Laboratory Safety · Fire Safety · Construction Safety · Construction and Demolition Waste Management · Energy Conservation · Water Conservation.</p>
+</section>
+
+<section id="mnre">
+<h2>Annex B. MNRE Biogas Programme</h2>
+<div class="tbl"><table>
+<tr><th>Field (M6)</th><th>Value</th></tr>
+<tr><td>Capacity class (m³/d or kWeq)</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>DPR required (threshold)</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Feedstock assurance period</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Commissioning performance tests</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Biogas flow meter + daily feedstock log</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>PIA / inspection / BDTC or RTC route</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>CFA / subsidy claim package</td><td><span class="tag empty">empty</span> — Compliance verifies scheme currency</td></tr>
+</table></div>
+<h3>Documents before CFA release (medium plants)</h3>
+<div class="tbl"><table>
+<tr><th>#</th><th>Document</th><th>Status</th></tr>
+<tr><td>(i)</td><td>Joint Project Commissioning report</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>(ii)</td><td>Performance data as per clause III</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>(iii)</td><td>Photographs with name, address &amp; display board</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>(iv)</td><td>Inspection report by third party / BDTC</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>(v)</td><td>Audited statement of expenditure</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>(vi)</td><td>Bank mandate form</td><td><span class="tag empty">empty</span></td></tr>
+</table></div>
+</section>
+
+<section id="csr-om">
+<h2>Annex C. CSR / O&amp;M module (Surathkal pattern)</h2>
+<div class="tbl"><table>
+<tr><th>Field</th><th>Value</th></tr>
+<tr><td>CSR funder</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Vendor</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>O&amp;M years</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Pilot kg/d</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Claimed gas / energy savings (vendor claim)</td><td><span class="tag empty">empty</span> — vendor claim, not measured campus</td></tr>
+</table></div>
+</section>
+
+<section id="barc-mou">
+<h2>Annex D. BARC MoU / tech-transfer module (Trichy Nisargruna pattern)</h2>
+<div class="tbl"><table>
+<tr><th>Field</th><th>Value</th></tr>
+<tr><td>MoU party</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Site location</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Capacity class (TPD)</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Footprint m²</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Staff count</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Water kL/d</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Methane kg/d / manure kg/d (vendor brochure fields)</td><td><span class="tag empty">empty</span> — vendor claim slot</td></tr>
 </table></div>
 </section>
 
 <section id="satat">
-<h2>8. SATAT scheme (CBG offtake variation)</h2>
-<p>This Pre-DPR keeps a <strong>SATAT / CBG offtake variation</strong> as a parallel path (cooking-gas campus pilot vs compressed bio-gas sold under MoPNG&rsquo;s offtake ecosystem). Scheme facts below are from MoPNG; <strong>our</strong> fit numbers stay empty.</p>
+<h2>Annex E. SATAT scheme (CBG offtake variation)</h2>
+<p>Parallel path: campus cooking-gas pilot vs compressed bio-gas sold under MoPNG&rsquo;s offtake ecosystem. Scheme facts from MoPNG; <strong>our</strong> fit stays empty.</p>
 <h3>What SATAT is (MoPNG)</h3>
 <ul>
 <li>Full name: <strong>Sustainable Alternative Towards Affordable Transportation</strong>.</li>
@@ -184,7 +318,7 @@ Proxy / estimate / lit-calculation figures are intentionally omitted from this d
 <li>Sources: <a href="https://mopng.gov.in/en/refining/compressed-bio-gas" target="_blank" rel="noopener">MoPNG — Compressed Bio Gas</a> · <a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=1548031" target="_blank" rel="noopener">PIB launch release</a></li>
 </ul>
 <h3>Related watch (not filled)</h3>
-<p>The Compliance outline flags the unified <strong>GOBARdhan</strong> Central Sector CBG scheme (launched 1 Oct 2026 per PIB) as a scale / ecosystem watch. Pilot fit for NITKKR is <span class="tag empty">empty</span> until Compliance accepts; scheme outlay, assistance and price figures are intentionally not reproduced here.</p>
+<p>Unified <strong>GOBARdhan</strong> Central Sector CBG scheme (launched 1 Oct 2026 per PIB) — scale / ecosystem watch. NITKKR fit <span class="tag empty">empty</span> until Compliance accepts; outlay, assistance and price figures not reproduced.</p>
 <h3>Our SATAT variation</h3>
 <div class="tbl"><table>
 <tr><th>Item</th><th>Status</th></tr>
@@ -192,59 +326,48 @@ Proxy / estimate / lit-calculation figures are intentionally omitted from this d
 <tr><td>Target CBG purity / IS specification for offtake</td><td><span class="tag empty">empty</span></td></tr>
 <tr><td>OMC / CGD counterparty (EoI / LoI)</td><td><span class="tag empty">empty</span></td></tr>
 <tr><td>Plant capacity for SATAT path</td><td><span class="tag empty">empty</span></td></tr>
-<tr><td>Offtake volume / price for our plant</td><td><span class="tag empty">empty</span> — not invented</td></tr>
+<tr><td>Offtake volume / price for our plant</td><td><span class="tag empty">empty</span></td></tr>
 <tr><td>FOM / digestate marketing under FCO</td><td><span class="tag empty">empty</span></td></tr>
 <tr><td>Eligibility vs SATAT / successor CBG framework</td><td><span class="tag empty">empty</span> — Compliance</td></tr>
 <tr><td>CAPEX delta vs campus cooking-gas kit</td><td><span class="tag empty">empty</span></td></tr>
 </table></div>
 </section>
 
-<section id="economics">
-<h2>9. Economics</h2>
+<section id="permit-matrix">
+<h2>Annex F. Permit matrix <small>(secondary — UIUC heading tree, India swap)</small></h2>
 <div class="tbl"><table>
-<tr><th>Item</th><th>Value</th></tr>
-<tr><td>CAPEX</td><td><span class="tag empty">empty</span></td></tr>
-<tr><td>OPEX</td><td><span class="tag empty">empty</span></td></tr>
-<tr><td>Savings / revenue</td><td><span class="tag empty">empty</span></td></tr>
-<tr><td>Subsidy / CFA in funding table</td><td><span class="tag empty">empty</span> — not filled; do not invent</td></tr>
+<tr><th>Level</th><th>Authority</th><th>Item</th><th>Status</th></tr>
+<tr><td>Campus / municipal</td><td>Estate / municipal SWM</td><td>Suitability and permissibility</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>State — air</td><td>HSPCB</td><td>Air / odour / flare</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>State — land</td><td>HSPCB</td><td>Digestate / solid waste</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>State — water</td><td>HSPCB</td><td>No-discharge / stormwater if triggered</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Central</td><td>MoEFCC / CPCB</td><td>EC screening; CPCB guidance</td><td><span class="tag empty">empty</span></td></tr>
 </table></div>
-</section>
-
-<section id="next">
-<h2>10. Next steps / open locks</h2>
-<ol>
-<li>Accept which campus refs count as measured for this Pre-DPR.</li>
-<li>Weigh all-campus streams (hostels, colony, horticulture, canteen, other kinds; sludge share after thickening logs).</li>
-<li>Lab TS / VS / BMP on the real blend — then methodology for gas and kit.</li>
-<li>Fill compliance C1–C8 with accepted screening notes only.</li>
-<li>CAPEX / OPEX after kit choice.</li>
-<li>Decide whether the CBG / SATAT variation is pursued, and what Compliance accepts as eligibility <span class="tag empty">empty</span>.</li>
-</ol>
 </section>
 </main>
 <footer id="refs">
-<strong>Methodology refs</strong> (structure only — <em>no public full DPR; plants built</em>. Capacities and costs from these sources are <strong>not</strong> copied into our empty shells.)
+<strong>Methodology refs</strong> (structure only — <em>no public full DPR; plants built</em>. Capacities and costs from these sources are <strong>not</strong> copied into our empty shells.) Draft now mirrors the Tezpur case TOC (§1–8) plus modules: Warangal EMP (A), MNRE (B), Surathkal CSR/O&amp;M (C), Trichy BARC MoU (D), SATAT (E), UIUC permits secondary (F).
 <p><strong>Primary clone stack</strong> (accepted built-campus keepers)</p>
 <ol>
 <li><strong>Tezpur University</strong> — biogas initiative case study (survey → design). Local: <code>refs/tezpur.pdf</code>. Related SCI note: <a href="http://www.tezu.ernet.in/sustainable/pdf/SCI-Document_Approved.pdf">tezu.ernet.in SCI document</a>.</li>
 <li><strong>NIT Warangal</strong> — campus sustainability / EMP and sludge co-digestion path. Local: <code>refs/nitw_EMP.pdf</code>, <code>refs/nitw_sustainability_report.pdf</code>, <code>refs/nitw_annual_report_2022-23.pdf</code>.</li>
-<li><strong>NITK Surathkal</strong> — built campus plant (CSR / BioUrja route). Structure and tender language only — not our BoQ. Local team keepers + Open Tender record when cited by Researcher.</li>
+<li><strong>NITK Surathkal</strong> — built campus plant (CSR / BioUrja route). Structure and tender language only — not our BoQ.</li>
 <li><strong>NIT Trichy</strong> — built Nisargruna plant under BARC MoU (press note). Local: <code>refs/nitt_nisargruna_press_2018.pdf</code>.</li>
 <li><strong>MNRE</strong> — Biogas Programme / Waste-to-Energy guidelines (compliance spine). Local: <code>refs/mnre_biogas_programme_2023-24.pdf</code>, <code>refs/mnre_wte_guidelines_2022.pdf</code>; portal <a href="https://biogas.mnre.gov.in">biogas.mnre.gov.in</a>. GOBARdhan manual: <a href="https://sbm.gov.in/gbdw20/ManualPage.aspx">SBM GOBARdhan manuals</a>.</li>
 </ol>
 <p><strong>Campus measured source</strong> (our numbers only when tagged measured above)</p>
 <ol start="6">
 <li>Prasad &amp; Deswal (2024), NIT Kurukshetra campus solid waste study — annual waste and STP flows on this page.</li>
+<li>NITKKR hostel waste-food quotation / tender notices — Annexure-1 column structure only (no kg field).</li>
 </ol>
 <p><strong>Secondary</strong> (structure analogs; demoted)</p>
-<ol start="7">
-<li>UIUC South Farms AD Feasibility Study (2014) — TOC sample only.</li>
+<ol start="8">
+<li>UIUC South Farms AD Feasibility Study (2014) — permit heading tree only (Annex F).</li>
 <li>IISc biomethanation tender (2017) — tender / O&amp;M language sample only.</li>
 <li>IIT Roorkee Green Committee minutes — institute approval-path analogy.</li>
 </ol>
 <p>Read the text extracts in the <a href="#reference-proposals">Reference proposals</a> tab.</p>
-<p>Team outlines (gaps, not filled values): Compliance C1–C8 outline; Data matrix/dictionary; Researcher accepted shortlist <code>refs/accepted_built_shortlist.md</code>.</p>
-NITKKR = NIT Kurukshetra. Thin living draft — proxies stripped; methodology refs locked 26 Oct 2026.
+NITKKR = NIT Kurukshetra. Thin living draft — proxies stripped; realigned to clone section map 26 Oct 2026.
 </footer>
 </div>
 <div class="panel" id="panel-refs" role="tabpanel" hidden>
