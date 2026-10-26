@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NITKKR Campus Biogas — Living Pre-DPR</title>
+<title>NITKKR Campus Biogas — Living Pre-DPR (thin draft)</title>
 <style>
 :root{--ink:#1d2433;--mute:#5b6475;--line:#d9dee7;--bg:#fafbfc;--accent:#1f6f50}
 *{box-sizing:border-box}
@@ -26,33 +26,30 @@ th{background:#eef2f6}
 .tbl{overflow-x:auto}
 .tag{display:inline-block;font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.03em;padding:1px 6px;border-radius:10px;margin-left:4px;white-space:nowrap;vertical-align:middle}
 .tag.measured{background:#d7f0e1;color:#14532d}
-.tag.proxy{background:#dbe8fb;color:#1e3a8a}
-.tag.estimate{background:#fde9c8;color:#7c4a03}
 .tag.empty{background:#eceff3;color:#4b5563;border:1px dashed #9aa3af}
 .tag.locked{background:#f8d7da;color:#7f1d1d}
 .lock{color:var(--mute);font-style:italic}
 .no{color:#7f1d1d;font-weight:600}
 footer{border-top:1px solid var(--line);margin-top:3em;padding:16px 18px 40px;font-size:.88rem;color:var(--mute)}
-@media print{nav{display:none}body{background:#fff;font-size:12px}h2{page-break-after:avoid}table{page-break-inside:avoid}.tag{border:1px solid #888}}
-@media(max-width:600px){h1{font-size:1.3rem}th,td{padding:5px}}
+@media print{nav{display:none}body{background:#fff;font-size:12px}}
+@media(max-width:600px){h1{font-size:1.3rem}}
 </style>
 </head>
 <body>
 <header>
 <h1>NITKKR Campus Biogas Pilot — Living Pre-DPR</h1>
-<p class="meta">National Institute of Technology Kurukshetra (NITKKR), Haryana · Draft proposal, updated as team data lands.<br>
-<strong>Last updated: 26 Oct 2026</strong></p>
-<div class="banner"><strong>Scope:</strong> non-hostel streams only (colony, horticulture, commercial canteen, STP sludge). <strong>Hostel mess is OUT of scope.</strong></div>
+<p class="meta">National Institute of Technology Kurukshetra (NITKKR), Haryana · Thin living draft.<br>
+<strong>Last updated: 26 Oct 2026</strong> · Rule: no proxy / estimate / assumption numbers until accepted campus refs lock.</p>
+<div class="banner"><strong>Scope:</strong> non-hostel streams only (colony, horticulture, commercial canteen, STP sludge). <strong>Hostel mess is OUT of scope.</strong><br>
+<strong>Numbers policy:</strong> only tagged <em>measured</em> campus facts appear below. All other modules are empty shells. Methodology TBD.</div>
 <div class="legend"><strong>Tag legend:</strong>
-<span class="tag measured">measured</span> primary document or field data ·
-<span class="tag proxy">proxy</span> literature / analog / norm ·
-<span class="tag estimate">estimate</span> team assumption or derived ·
-<span class="tag empty">empty</span> not yet known — no value shown ·
-<span class="tag locked">locked</span> value must not be used.
-Every number on this page carries one tag. No untagged numbers.</div>
+<span class="tag measured">measured</span> primary campus document ·
+<span class="tag empty">empty</span> not filled — no invented value ·
+<span class="tag locked">locked</span> must not be used.
+Proxy / estimate / lit-calculation figures are intentionally omitted from this draft.</div>
 </header>
 <nav><ul>
-<li><a href="#exec">1 Exec summary</a></li>
+<li><a href="#exec">1 About</a></li>
 <li><a href="#feedstock">2 Feedstock</a></li>
 <li><a href="#tech">3 Technology</a></li>
 <li><a href="#site">4 Site</a></li>
@@ -66,167 +63,121 @@ Every number on this page carries one tag. No untagged numbers.</div>
 <main>
 
 <section id="exec">
-<h2>1. Executive summary</h2>
-<p>NITKKR plans a small on-campus anaerobic digestion (biogas) pilot that turns segregated non-hostel wet waste and STP sludge into cooking gas and digestate manure.</p>
+<h2>1. What this proposal is about</h2>
+<p>NITKKR is preparing a Pre-DPR for a small on-campus anaerobic digestion (biogas) pilot that would process segregated <strong>non-hostel</strong> wet waste and STP sludge into cooking gas and digestate manure.</p>
 <ul>
-<li>Campus solid waste is <strong>1,615,027 kg/yr</strong> <span class="tag measured">measured</span> (Deswal/Prasad 2024), about <strong>≈4,425 kg/d</strong> <span class="tag estimate">estimate</span> (÷365; total campus waste, not a digester feed).</li>
-<li>Usable streams in scope: residential colony wet waste, horticulture, commercial canteen, and STP waste-activated sludge. Only colony and sludge have bands so far; horticulture and canteen masses are <span class="tag empty">empty</span>.</li>
-<li>Design gas (Lead 8 two-route, lower route): monsoon ~25 Nm³ CH₄/d (~41 Nm³ biogas/d) <span class="tag estimate">estimate</span>; winter ~26 Nm³ CH₄/d (~42 biogas) <span class="tag estimate">estimate</span>; planning envelope ~20–35 Nm³ CH₄/d until canteen/horticulture are weighed <span class="tag estimate">estimate</span>. Not a kit lock.</li>
-<li>Digester size and cost remain <span class="tag empty">empty</span>.</li>
-<li>Central subsidy (MNRE CFA) is <strong>not banked</strong>: NBP Phase-I ended 30.09.2026 <span class="tag measured">measured</span>. Plan assumes institute funding.</li>
-<li>Regulatory aim: HSPCB <em>White</em> category (no discharge, digestate used as manure) — confirmation <span class="tag empty">empty</span>.</li>
+<li>This page is the living outline. Module shells stay empty until accepted NIT campus measurements (or locked institute decisions) land.</li>
+<li>Sample / reference proposals are listed under Refs for structure only — they are not our numbers.</li>
+<li>Methodology for gas, sizing, and cost is <strong>TBD</strong> until accepted NIT refs lock.</li>
 </ul>
 </section>
 
 <section id="feedstock">
 <h2>2. Feedstock sources (streams in scope)</h2>
 <div class="tbl"><table>
-<tr><th>Stream</th><th>Wet mass</th><th>Notes</th></tr>
-<tr><td>Residential colony (wet/organic)</td><td>~200–400 kg/d <span class="tag proxy">proxy</span><br>typ ~193–386 kg/d @ 1,928 people <span class="tag proxy">proxy</span></td><td>CPHEEO / SBM per-capita organic norms. Needs a weighed window.</td></tr>
-<tr><td>Horticulture (doob <em>Cynodon dactylon</em>, leaves)</td><td class="lock">— <span class="tag empty">empty</span></td><td>Species/season known <span class="tag proxy">proxy</span>: monsoon green grass vs Dec–Feb dry leaves. No kg yet.</td></tr>
+<tr><th>Stream</th><th>Wet mass / solids</th><th>Notes</th></tr>
+<tr><td>Campus solid waste (all types, annual)</td><td><strong>1,615,027 kg/yr</strong> <span class="tag measured">measured</span></td><td>Deswal/Prasad 2024 campus study. Context only — not a digester feed recipe.</td></tr>
+<tr><td>STP design / influent</td><td><strong>1.5 MLD</strong> design / <strong>1.05 MLD</strong> influent <span class="tag measured">measured</span></td><td>Same paper. Sludge wet kg/d for the pilot is <span class="tag empty">empty</span>.</td></tr>
+<tr><td>Residential colony (wet/organic)</td><td class="lock">— <span class="tag empty">empty</span></td><td>Weighed window required.</td></tr>
+<tr><td>Horticulture</td><td class="lock">— <span class="tag empty">empty</span></td><td>Species / season notes may land later; no kg here.</td></tr>
 <tr><td>Commercial canteen</td><td class="lock">— <span class="tag empty">empty</span></td><td>Weighing pending.</td></tr>
-<tr><td>STP waste-activated sludge (WAS)</td><td>~80–100 kg DS/d <span class="tag estimate">estimate</span><br>lit band 74–105, typ 84 kg DS/d <span class="tag estimate">estimate</span></td><td>STP design 1.5 MLD / influent 1.05 MLD <span class="tag measured">measured</span>. Dry solids basis, not wet.</td></tr>
+<tr><td>STP sludge (WAS) for digester share</td><td class="lock">— <span class="tag empty">empty</span></td><td>Needs thickening / operator data before any feed mass is written.</td></tr>
 <tr><td>Hostel mess</td><td colspan="2"><span class="no">OUT of scope</span></td></tr>
 </table></div>
-<p>Horticulture and canteen weighed masses remain <span class="tag empty">empty</span>; Lead 8 gas math uses the planning sketch below.</p>
-<h3>Reference blend (not locked) <span class="tag estimate">estimate</span></h3>
-<div class="tbl"><table>
-<tr><th>Stream</th><th>kg/d wet</th><th>Notes</th></tr>
-<tr><td>Colony + canteen FW</td><td>450 (300 + 150) <span class="tag proxy">proxy</span> <span class="tag estimate">estimate</span></td><td>Colony 300 from Lead 4 band; canteen 150 unweighed.</td></tr>
-<tr><td>Horticulture</td><td>100 <span class="tag estimate">estimate</span></td><td>Area × yield still empty.</td></tr>
-<tr><td>WAS thickened share</td><td>100 @ 5% DS (≈5 kg DS, ~3 kg VS) <span class="tag estimate">estimate</span></td><td>Thickened share only.</td></tr>
-</table></div>
-<p><strong>Risk:</strong> full raw WAS would be ~9–13 t/d wet @ 0.8% DS <span class="tag estimate">estimate</span> — <strong>excluded</strong>; thicken or take a small share only.</p>
-<h3>Do-not-use values</h3>
+<h3>Do-not-use</h3>
 <ul>
-<li>Deswal Fig. 3 “22% compostable” — <strong>forbidden</strong> as the organic share of campus waste <span class="tag locked">locked</span> (proxy default, DO NOT USE).</li>
-<li>Campus daily total ≈4,425 kg/d <span class="tag estimate">estimate</span> is all waste types; never feed it into gas math.</li>
+<li>Deswal Fig. 3 “22% compostable” as organic share — <span class="tag locked">locked</span> / forbidden.</li>
+<li>Any literature BMP, blend sketch, or planning gas band — stripped from this draft.</li>
 </ul>
 </section>
 
 <section id="tech">
 <h2>3. Technology options</h2>
-<p>Options are listed as structure/analogs only <span class="tag proxy">proxy</span>; no vendor quote or sizing yet.</p>
+<p>Empty shell. Route choice (HLR vs other), pretreat, and kit size stay open until campus mass + assays lock.</p>
 <div class="tbl"><table>
-<tr><th>Option / analog</th><th>Use here</th><th>Tag</th></tr>
-<tr><td>IISc 2 TPD biomethanation tender (2017)</td><td>Tender scope, O&amp;M and segregation clauses</td><td><span class="tag proxy">proxy</span></td></tr>
-<tr><td>NITK Surathkal plant (₹44 L / 1 TPD)</td><td>Structure-only scale analog — different campus, not NITKKR cost</td><td><span class="tag proxy">proxy</span></td></tr>
-<tr><td>J&amp;F high-load reactor (HLR)</td><td>Vendor reference for HLR route</td><td><span class="tag proxy">proxy</span></td></tr>
-<tr><td>BARC Nisargruna</td><td>Vendor/design analog for mixed kitchen + garden waste</td><td><span class="tag proxy">proxy</span></td></tr>
-<tr><td>GPS BioUrja</td><td>Vendor reference, packaged plants</td><td><span class="tag proxy">proxy</span></td></tr>
+<tr><th>Item</th><th>Status</th></tr>
+<tr><td>Digester type / OLR–HRT setpoint</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Pretreatment (shred / fungal / other)</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Gas holder / end use</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Vendor shortlist (quotes)</td><td><span class="tag empty">empty</span> — sample plant names may appear under Refs only</td></tr>
 </table></div>
-<h3>HLR seasonal go / no-go <span class="tag proxy">proxy</span></h3>
-<div class="tbl"><table>
-<tr><th>Season</th><th>Call</th><th>Condition</th></tr>
-<tr><td>Monsoon</td><td><strong>Soft GO</strong></td><td>Shred feed; garden waste kept a minority of VS.</td></tr>
-<tr><td>Dec–Feb</td><td class="no">NO-GO for raw dry leaves</td><td>Needs pretreatment or a non-HLR route.</td></tr>
-<tr><td>Year-round</td><td>—</td><td>No single year-round HLR setpoint.</td></tr>
-</table></div>
-<p>Digester volume / HRT / gas holder: <span class="tag empty">empty</span>. CH₄ fraction for later sizing: 55–65% <span class="tag proxy">proxy</span>.</p>
 </section>
 
 <section id="site">
 <h2>4. Site options</h2>
-<p>Candidate locations (near STP for sludge; near canteen/colony for gas use) not yet shortlisted <span class="tag empty">empty</span>. Siting will follow CPCB odour/leachate norms (C3) and a no-ignition zone (C7). Civil layout can start before mass data.</p>
+<p>Candidate locations not shortlisted <span class="tag empty">empty</span>. Civil can start after institute path and a provisional siting note; no layout numbers here.</p>
 </section>
 
 <section id="assays">
 <h2>5. Assays / composition (TS, VS, BMP)</h2>
 <div class="tbl"><table>
-<tr><th>Stream</th><th>TS</th><th>VS/TS</th><th>BMP (Nm³ CH₄/kg VS)</th></tr>
+<tr><th>Stream</th><th>TS</th><th>VS/TS</th><th>BMP</th></tr>
 <tr><td>Colony wet waste</td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td></tr>
-<tr><td>Green lawn / doob — monsoon</td><td>32.8% <span class="tag estimate">estimate</span></td><td>87.3% <span class="tag estimate">estimate</span></td><td>0.119–0.292 <span class="tag proxy">proxy</span> (Klass / Nitsche)</td></tr>
-<tr><td>Dry leaves alone — Dec–Feb</td><td>91.6% <span class="tag estimate">estimate</span></td><td>85% <span class="tag estimate">estimate</span></td><td>0.055 <span class="tag proxy">proxy</span> (Liew)</td></tr>
-<tr><td>Canteen / colony food waste (FW)</td><td>18% <span class="tag estimate">estimate</span></td><td>85% <span class="tag estimate">estimate</span></td><td>0.30–0.41 <span class="tag proxy">proxy</span> (CLET 2020)</td></tr>
-<tr><td>STP sludge (WAS)</td><td>5% DS thickened share <span class="tag estimate">estimate</span></td><td>VSS/TSS 0.60 <span class="tag estimate">estimate</span></td><td>0.19–0.24 <span class="tag proxy">proxy</span> (IEA)</td></tr>
+<tr><td>Horticulture</td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Commercial canteen</td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>STP sludge</td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td></tr>
 <tr><td><strong>Blend</strong></td><td colspan="2">needs mass fractions</td><td><span class="tag empty">empty</span></td></tr>
 </table></div>
-<p>Colony wet-waste composition: measured TS/VS <span class="tag empty">empty</span> (Lead 8 treats colony as FW). CH₄ fraction 55–65% <span class="tag proxy">proxy</span>.</p>
-<h3>5a. Output / gas — Lead 8 two-route check <span class="tag estimate">estimate</span></h3>
-<p>Design = lower of Route A (lit BMP × VS) and Route B (COD × 0.35 × η), at the reference blend.</p>
-<div class="tbl"><table>
-<tr><th>Season</th><th>Route A CH₄ Nm³/d</th><th>Route B CH₄ Nm³/d</th><th>Design (min) CH₄</th><th>Biogas @ 60%</th></tr>
-<tr><td>Monsoon (green hort)</td><td>24.6–37.3 <span class="tag estimate">estimate</span></td><td>~27.7 (η = 0.55) <span class="tag estimate">estimate</span></td><td><strong>~25</strong> <span class="tag estimate">estimate</span></td><td>~41 <span class="tag estimate">estimate</span></td></tr>
-<tr><td>Winter (dry leaves)</td><td>25.5–33.2 <span class="tag estimate">estimate</span></td><td>~26.2 (η = 0.35) <span class="tag estimate">estimate</span></td><td><strong>~26</strong> <span class="tag estimate">estimate</span></td><td>~42 <span class="tag estimate">estimate</span></td></tr>
-</table></div>
-<ul>
-<li>Planning envelope: ~20–35 Nm³ CH₄/d until canteen/horticulture are weighed <span class="tag estimate">estimate</span>.</li>
-<li>Mass sensitivity (monsoon, low BMP): FW 300–650 + hort 50–150 kg/d → ~16–36 Nm³ CH₄/d <span class="tag estimate">estimate</span>.</li>
-<li>Route B uses assumed COD factors — COD is a gap in the Researcher pack <span class="tag estimate">estimate</span>.</li>
-<li>Not a kit lock; replace with measured BMP when Phase 3 runs.</li>
-</ul>
+<h3>Output / gas</h3>
+<p>Gas Nm³/d, CH₄ fraction for design, and two-route checks: <span class="tag empty">empty</span>. No lit-proxy bands on this page.</p>
 </section>
 
 <section id="collection">
 <h2>6. Collection, transport, storage</h2>
 <ul>
-<li>Segregation at source is a precondition; plants fail without it (IITR minutes) <span class="tag proxy">proxy</span>.</li>
-<li>Routes: colony door-to-door wet bins; horticulture clippings (shred before feed); canteen bins; sludge from STP thickener.</li>
-<li>Bin counts, trips/day, storage hours: <span class="tag empty">empty</span>. Needs a weighed collection window.</li>
+<li>Segregation at source is a precondition <span class="tag empty">empty</span> for the campus plan text.</li>
+<li>Bin counts, trips/day, storage hours: <span class="tag empty">empty</span>.</li>
 </ul>
 </section>
 
 <section id="compliance">
 <h2>7. Environmental attributes &amp; compliance</h2>
-<h3>Environmental attributes</h3>
-<ul>
-<li>GHG avoided by diverting wet waste from dumping/burning; digestate as manure for campus green belt <span class="tag estimate">estimate</span> — no tCO₂e figure yet <span class="tag empty">empty</span>.</li>
-<li>Carbon credits (Indian Carbon Market / CCTS): screening only; pilot likely too small to monetise <span class="tag estimate">estimate</span>.</li>
-<li>LPG offset for canteen cooking: <span class="tag empty">empty</span> until gas Nm³/d is known.</li>
-</ul>
-<h3>Permits and approvals (C1–C8)</h3>
+<p>Chapter outline exists with the team (C1–C8). Outcomes and lead times stay empty until Screening notes are accepted.</p>
 <div class="tbl"><table>
-<tr><th>#</th><th>Item</th><th>Summary</th><th>Status</th></tr>
-<tr><td>C1</td><td>EC / EIA (MoEFCC, EIA Notification 2006)</td><td>In-house plant well below 5 TPD; no listed schedule item expected. Record the schedule item checked.</td><td>Likely N/A — screening <span class="tag proxy">proxy</span></td></tr>
-<tr><td>C2</td><td>HSPCB Consent to Establish / Operate</td><td>Aim White category: zero discharge, digestate used as manure. If not White, CTE before civil works and CTO before commissioning (Water Act 1974, Air Act 1981).</td><td>Aim White — category unconfirmed <span class="tag empty">empty</span></td></tr>
-<tr><td>C3</td><td>CPCB guidelines (CBG / bio-digester, 2022)</td><td>Follow siting, odour, leachate and digestate norms by analogy; quote the clause for each design choice.</td><td>Clauses not yet read <span class="tag proxy">proxy</span></td></tr>
-<tr><td>C4</td><td>SWM Rules 2026 — bulk waste generator</td><td>Campus is a BWG; on-site wet-waste processing meets the duty. Needs a segregation-at-source plan.</td><td>BWG text unchecked <span class="tag proxy">proxy</span></td></tr>
-<tr><td>C5</td><td>MNRE CFA / GOBARdhan</td><td>NBP Phase-I ended 30.09.2026; Phase-II not approved. No later extension found. GOBARdhan CBG scheme targets larger scale; pilot fit unlikely.</td><td class="no">Do not bank CFA <span class="tag measured">measured</span></td></tr>
-<tr><td>C6</td><td>Institute approval path</td><td>Director → Estate → Green/Environment Committee → Safety → Finance Committee/BoG → tender (GFR/GeM). IISc tender clauses for scope and O&amp;M.</td><td>Path drafted from IITR analog <span class="tag proxy">proxy</span></td></tr>
-<tr><td>C7</td><td>Digester and gas safety</td><td>IS 9478 design checks; flame arrestor, pressure relief, flare, H₂S scrub. PESO licence only if gas is compressed/bottled; low-pressure on-site use avoids it.</td><td>Design pending <span class="tag proxy">proxy</span></td></tr>
-<tr><td>C8</td><td>HSPCB Regional Office route</td><td>Get written category confirmation from the Kurukshetra-area RO before tender.</td><td>Not started <span class="tag empty">empty</span></td></tr>
+<tr><th>#</th><th>Item</th><th>Status on this page</th></tr>
+<tr><td>C1</td><td>EC / EIA screening</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>C2</td><td>HSPCB CTE / CTO (White aim)</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>C3</td><td>CPCB bio-digester / CBG norms</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>C4</td><td>SWM Rules — bulk waste generator</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>C5</td><td>MNRE CFA / related schemes</td><td><span class="tag empty">empty</span> — do not bank any subsidy figure here</td></tr>
+<tr><td>C6</td><td>Institute approval path</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>C7</td><td>Digester / gas safety</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>C8</td><td>HSPCB Regional Office confirmation</td><td><span class="tag empty">empty</span></td></tr>
 </table></div>
-<p><strong>Risk:</strong> no CFA means full institute funding; a non-White category adds CTE/CTO lead time before tender.</p>
 </section>
 
 <section id="economics">
 <h2>8. Economics</h2>
 <div class="tbl"><table>
 <tr><th>Item</th><th>Value</th></tr>
-<tr><td>Gas basis for economics</td><td>Planning envelope ~20–35 Nm³ CH₄/d; design ~25–26 Nm³ CH₄/d <span class="tag estimate">estimate</span> (Lead 8)</td></tr>
-<tr><td>CAPEX (civil, digester, gas line, shredder)</td><td><span class="tag empty">empty</span></td></tr>
-<tr><td>OPEX (labour, power, H₂S media, maintenance)</td><td><span class="tag empty">empty</span></td></tr>
-<tr><td>Savings (LPG offset, manure, avoided haulage)</td><td><span class="tag empty">empty</span></td></tr>
-<tr><td>MNRE CFA</td><td class="no">Not banked — excluded from funding table <span class="tag measured">measured</span> (scheme ended 30.09.2026)</td></tr>
-<tr><td>Scale analog</td><td>NITK Surathkal ₹44 L / 1 TPD — structure only, not a NITKKR cost <span class="tag proxy">proxy</span></td></tr>
+<tr><td>CAPEX</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>OPEX</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Savings / revenue</td><td><span class="tag empty">empty</span></td></tr>
+<tr><td>Subsidy / CFA in funding table</td><td><span class="tag empty">empty</span> — not filled; do not invent</td></tr>
 </table></div>
 </section>
 
 <section id="next">
 <h2>9. Next steps / open locks</h2>
 <ol>
-<li>Weigh horticulture and commercial canteen wet kg/d <span class="tag empty">empty</span>.</li>
-<li>Confirm colony band with a weighed window (replace proxy).</li>
-<li>Lab TS/VS per stream; garden fiber; blend BMP <span class="tag empty">empty</span>.</li>
-<li>Researcher lit pack seeded (proxy) — replace with campus-measured BMP.</li>
-<li>Lead 8 two-route gas check done as <span class="tag estimate">estimate</span>; kit/size <strong>not locked</strong> until canteen/hort weighed and BMP measured. Digester volume/HRT <span class="tag empty">empty</span>.</li>
-<li>CAPEX/OPEX tables <span class="tag empty">empty</span>.</li>
-<li>HSPCB White confirmation via RO (C2/C8) <span class="tag empty">empty</span>.</li>
-<li>Site shortlist and institute approval sequence (C6).</li>
+<li>Accept which campus refs count as measured for this Pre-DPR.</li>
+<li>Weigh in-scope streams (colony, horticulture, canteen; sludge share after thickening logs).</li>
+<li>Lab TS / VS / BMP on the real blend — then methodology for gas and kit.</li>
+<li>Fill compliance C1–C8 with accepted screening notes only.</li>
+<li>CAPEX / OPEX after kit choice.</li>
 </ol>
 </section>
 </main>
 <footer id="refs">
-<strong>References</strong>
+<strong>Sample / reference proposals</strong> (structure and reading list only — not our numbers)
 <ol>
-<li>Prasad &amp; Deswal (2024), NIT Kurukshetra campus solid waste study.</li>
-<li>UIUC South Farms Anaerobic Digester Feasibility Study (2014) — structure.</li>
-<li>IISc 2 TPD biomethanation plant tender (2017).</li>
-<li>IIT Roorkee Green Committee minutes (2023/2024) — approval path analogy.</li>
-<li>IEA Bioenergy — sludge BMP bands; CLET 2020 (FW); Klass / Nitsche (lawn); Liew (dry leaves).</li>
-<li>Team files: Lead 8 two-route gas note v1 · Data matrix v0.4 / dictionary v0.2 · Compliance outline 26 Oct 2026.</li>
+<li>Prasad &amp; Deswal (2024), NIT Kurukshetra campus solid waste study — source of the measured annual waste and STP flows above.</li>
+<li>UIUC South Farms Anaerobic Digester Feasibility Study (2014) — TOC / chapter structure sample.</li>
+<li>IISc 2 TPD biomethanation plant tender (2017) — tender / O&amp;M language sample.</li>
+<li>IIT Roorkee Green Committee minutes — institute approval-path analogy (sample).</li>
+<li>Team outlines (not published figures): Compliance C1–C8 outline; Data matrix/dictionary — use for gaps, not as filled values here.</li>
 </ol>
-NITKKR = NIT Kurukshetra. Living draft — values change as data lands.
+NITKKR = NIT Kurukshetra. Thin living draft — proxies and lit calculations stripped per Nitin rule (26 Oct 2026).
 </footer>
 </body>
 </html>
