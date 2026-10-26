@@ -71,7 +71,8 @@ Every number on this page carries one tag. No untagged numbers.</div>
 <ul>
 <li>Campus solid waste is <strong>1,615,027 kg/yr</strong> <span class="tag measured">measured</span> (Deswal/Prasad 2024), about <strong>≈4,425 kg/d</strong> <span class="tag estimate">estimate</span> (÷365; total campus waste, not a digester feed).</li>
 <li>Usable streams in scope: residential colony wet waste, horticulture, commercial canteen, and STP waste-activated sludge. Only colony and sludge have bands so far; horticulture and canteen masses are <span class="tag empty">empty</span>.</li>
-<li>Gas output, digester size and cost are <span class="tag empty">empty</span> until stream masses and TS/VS/BMP are fixed.</li>
+<li>Design gas (Lead 8 two-route, lower route): monsoon ~25 Nm³ CH₄/d (~41 Nm³ biogas/d) <span class="tag estimate">estimate</span>; winter ~26 Nm³ CH₄/d (~42 biogas) <span class="tag estimate">estimate</span>; planning envelope ~20–35 Nm³ CH₄/d until canteen/horticulture are weighed <span class="tag estimate">estimate</span>. Not a kit lock.</li>
+<li>Digester size and cost remain <span class="tag empty">empty</span>.</li>
 <li>Central subsidy (MNRE CFA) is <strong>not banked</strong>: NBP Phase-I ended 30.09.2026 <span class="tag measured">measured</span>. Plan assumes institute funding.</li>
 <li>Regulatory aim: HSPCB <em>White</em> category (no discharge, digestate used as manure) — confirmation <span class="tag empty">empty</span>.</li>
 </ul>
@@ -87,6 +88,15 @@ Every number on this page carries one tag. No untagged numbers.</div>
 <tr><td>STP waste-activated sludge (WAS)</td><td>~80–100 kg DS/d <span class="tag estimate">estimate</span><br>lit band 74–105, typ 84 kg DS/d <span class="tag estimate">estimate</span></td><td>STP design 1.5 MLD / influent 1.05 MLD <span class="tag measured">measured</span>. Dry solids basis, not wet.</td></tr>
 <tr><td>Hostel mess</td><td colspan="2"><span class="no">OUT of scope</span></td></tr>
 </table></div>
+<p>Horticulture and canteen weighed masses remain <span class="tag empty">empty</span>; Lead 8 gas math uses the planning sketch below.</p>
+<h3>Reference blend (not locked) <span class="tag estimate">estimate</span></h3>
+<div class="tbl"><table>
+<tr><th>Stream</th><th>kg/d wet</th><th>Notes</th></tr>
+<tr><td>Colony + canteen FW</td><td>450 (300 + 150) <span class="tag proxy">proxy</span> <span class="tag estimate">estimate</span></td><td>Colony 300 from Lead 4 band; canteen 150 unweighed.</td></tr>
+<tr><td>Horticulture</td><td>100 <span class="tag estimate">estimate</span></td><td>Area × yield still empty.</td></tr>
+<tr><td>WAS thickened share</td><td>100 @ 5% DS (≈5 kg DS, ~3 kg VS) <span class="tag estimate">estimate</span></td><td>Thickened share only.</td></tr>
+</table></div>
+<p><strong>Risk:</strong> full raw WAS would be ~9–13 t/d wet @ 0.8% DS <span class="tag estimate">estimate</span> — <strong>excluded</strong>; thicken or take a small share only.</p>
 <h3>Do-not-use values</h3>
 <ul>
 <li>Deswal Fig. 3 “22% compostable” — <strong>forbidden</strong> as the organic share of campus waste <span class="tag locked">locked</span> (proxy default, DO NOT USE).</li>
@@ -125,13 +135,26 @@ Every number on this page carries one tag. No untagged numbers.</div>
 <div class="tbl"><table>
 <tr><th>Stream</th><th>TS</th><th>VS/TS</th><th>BMP (Nm³ CH₄/kg VS)</th></tr>
 <tr><td>Colony wet waste</td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td></tr>
-<tr><td>Doob — monsoon green</td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span> proxy pack pending exact lit values from Researcher</td></tr>
-<tr><td>Doob / leaves — Dec–Feb dry</td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span> proxy pack pending exact lit values from Researcher</td></tr>
-<tr><td>Canteen food waste</td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td><td>0.30–0.41 <span class="tag proxy">proxy</span></td></tr>
-<tr><td>STP sludge (WAS)</td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span></td><td><span class="tag empty">empty</span> IEA sludge BMP band (cite IEA) — number pending</td></tr>
+<tr><td>Green lawn / doob — monsoon</td><td>32.8% <span class="tag estimate">estimate</span></td><td>87.3% <span class="tag estimate">estimate</span></td><td>0.119–0.292 <span class="tag proxy">proxy</span> (Klass / Nitsche)</td></tr>
+<tr><td>Dry leaves alone — Dec–Feb</td><td>91.6% <span class="tag estimate">estimate</span></td><td>85% <span class="tag estimate">estimate</span></td><td>0.055 <span class="tag proxy">proxy</span> (Liew)</td></tr>
+<tr><td>Canteen / colony food waste (FW)</td><td>18% <span class="tag estimate">estimate</span></td><td>85% <span class="tag estimate">estimate</span></td><td>0.30–0.41 <span class="tag proxy">proxy</span> (CLET 2020)</td></tr>
+<tr><td>STP sludge (WAS)</td><td>5% DS thickened share <span class="tag estimate">estimate</span></td><td>VSS/TSS 0.60 <span class="tag estimate">estimate</span></td><td>0.19–0.24 <span class="tag proxy">proxy</span> (IEA)</td></tr>
 <tr><td><strong>Blend</strong></td><td colspan="2">needs mass fractions</td><td><span class="tag empty">empty</span></td></tr>
 </table></div>
-<p>Gas yield Nm³/d <span class="tag empty">empty</span>. CH₄ fraction 55–65% <span class="tag proxy">proxy</span>. Design will use the lower of two routes (lit BMP × VS vs COD) once data lands.</p>
+<p>Colony wet-waste composition: measured TS/VS <span class="tag empty">empty</span> (Lead 8 treats colony as FW). CH₄ fraction 55–65% <span class="tag proxy">proxy</span>.</p>
+<h3>5a. Output / gas — Lead 8 two-route check <span class="tag estimate">estimate</span></h3>
+<p>Design = lower of Route A (lit BMP × VS) and Route B (COD × 0.35 × η), at the reference blend.</p>
+<div class="tbl"><table>
+<tr><th>Season</th><th>Route A CH₄ Nm³/d</th><th>Route B CH₄ Nm³/d</th><th>Design (min) CH₄</th><th>Biogas @ 60%</th></tr>
+<tr><td>Monsoon (green hort)</td><td>24.6–37.3 <span class="tag estimate">estimate</span></td><td>~27.7 (η = 0.55) <span class="tag estimate">estimate</span></td><td><strong>~25</strong> <span class="tag estimate">estimate</span></td><td>~41 <span class="tag estimate">estimate</span></td></tr>
+<tr><td>Winter (dry leaves)</td><td>25.5–33.2 <span class="tag estimate">estimate</span></td><td>~26.2 (η = 0.35) <span class="tag estimate">estimate</span></td><td><strong>~26</strong> <span class="tag estimate">estimate</span></td><td>~42 <span class="tag estimate">estimate</span></td></tr>
+</table></div>
+<ul>
+<li>Planning envelope: ~20–35 Nm³ CH₄/d until canteen/horticulture are weighed <span class="tag estimate">estimate</span>.</li>
+<li>Mass sensitivity (monsoon, low BMP): FW 300–650 + hort 50–150 kg/d → ~16–36 Nm³ CH₄/d <span class="tag estimate">estimate</span>.</li>
+<li>Route B uses assumed COD factors — COD is a gap in the Researcher pack <span class="tag estimate">estimate</span>.</li>
+<li>Not a kit lock; replace with measured BMP when Phase 3 runs.</li>
+</ul>
 </section>
 
 <section id="collection">
@@ -170,6 +193,7 @@ Every number on this page carries one tag. No untagged numbers.</div>
 <h2>8. Economics</h2>
 <div class="tbl"><table>
 <tr><th>Item</th><th>Value</th></tr>
+<tr><td>Gas basis for economics</td><td>Planning envelope ~20–35 Nm³ CH₄/d; design ~25–26 Nm³ CH₄/d <span class="tag estimate">estimate</span> (Lead 8)</td></tr>
 <tr><td>CAPEX (civil, digester, gas line, shredder)</td><td><span class="tag empty">empty</span></td></tr>
 <tr><td>OPEX (labour, power, H₂S media, maintenance)</td><td><span class="tag empty">empty</span></td></tr>
 <tr><td>Savings (LPG offset, manure, avoided haulage)</td><td><span class="tag empty">empty</span></td></tr>
@@ -184,8 +208,8 @@ Every number on this page carries one tag. No untagged numbers.</div>
 <li>Weigh horticulture and commercial canteen wet kg/d <span class="tag empty">empty</span>.</li>
 <li>Confirm colony band with a weighed window (replace proxy).</li>
 <li>Lab TS/VS per stream; garden fiber; blend BMP <span class="tag empty">empty</span>.</li>
-<li>Researcher lit pack: doob green vs dry BMP; IEA sludge band.</li>
-<li>Gas Nm³/d and digester volume/HRT <span class="tag empty">empty</span> (two-route check, design to lower).</li>
+<li>Researcher lit pack seeded (proxy) — replace with campus-measured BMP.</li>
+<li>Lead 8 two-route gas check done as <span class="tag estimate">estimate</span>; kit/size <strong>not locked</strong> until canteen/hort weighed and BMP measured. Digester volume/HRT <span class="tag empty">empty</span>.</li>
 <li>CAPEX/OPEX tables <span class="tag empty">empty</span>.</li>
 <li>HSPCB White confirmation via RO (C2/C8) <span class="tag empty">empty</span>.</li>
 <li>Site shortlist and institute approval sequence (C6).</li>
@@ -199,8 +223,8 @@ Every number on this page carries one tag. No untagged numbers.</div>
 <li>UIUC South Farms Anaerobic Digester Feasibility Study (2014) — structure.</li>
 <li>IISc 2 TPD biomethanation plant tender (2017).</li>
 <li>IIT Roorkee Green Committee minutes (2023/2024) — approval path analogy.</li>
-<li>IEA Bioenergy — sludge BMP bands (values pending).</li>
-<li>Team files: Data matrix v0.3 / dictionary v0.2 · Compliance outline 26 Oct 2026.</li>
+<li>IEA Bioenergy — sludge BMP bands; CLET 2020 (FW); Klass / Nitsche (lawn); Liew (dry leaves).</li>
+<li>Team files: Lead 8 two-route gas note v1 · Data matrix v0.4 / dictionary v0.2 · Compliance outline 26 Oct 2026.</li>
 </ol>
 NITKKR = NIT Kurukshetra. Living draft — values change as data lands.
 </footer>
